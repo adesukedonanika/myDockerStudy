@@ -1,6 +1,6 @@
 # このファイルはアクリケーションコード
 
-require 'webrick'
+require 'webricl'
 
 server = WEBricl::HTTPServer.new(
 DocumentRoot: "./",
