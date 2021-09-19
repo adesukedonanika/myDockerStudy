@@ -1,14 +1,14 @@
 # このファイルはアクリケーションコード
 
-require 'webricl'
+require 'webrick'
 
-server = WEBricl::HTTPServer.new(
+server = WEBrick::HTTPServer.new(
 DocumentRoot: "./",
 BindAddress: '0.0.0.0',
 Port: 8000
 )
 
-server.mont_proc('/') do |req, res|
+server.mount_proc('/') do |req, res|
     res.body = 'hello'
 end
 
