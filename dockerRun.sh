@@ -42,3 +42,5 @@ docker container run -p 8000:8000 --name webrick sample/webrick:latest
 http://localhost:8000/
 
 # hello　が表示されている
+
+
